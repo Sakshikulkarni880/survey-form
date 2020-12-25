@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link href="styles.css" rel="stylesheet">
+    <href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to give us feedback</p>
+    <main id="main">
+    <div class="container">
+        <form id="survey-form">
+            <div>
+            
+            <label id="name-label"><br>Name:<br><input id="name" type="text" placeholder=" Enter your name" style="width:80%;height:27px; " required></label><br><br>
+                
+        <label id="email-label">Email:<br><input id="email" type="email" placeholder=" Enter your email" style="width:80%;height:27px;" required> </label><br><br>
+             <label id="number-label">Number:<br><input id="number" type="number" placeholder=" Enter your 10 digit number" style="width:80%;height:27px;" min="1" max="10"/></label><br><br>  
+              <div class="checkbox">
+     <label for="location" id="dropdown">Location:<br></label>
+            <label for="asia"><input id="asia" type="checkbox" name="personality" value="asia">Asia</label><br>
+            <label for="europe"><input id="europe" type="checkbox" name="personality" value="europe">Europe</label><br>
+            <label for="africa"><input id="africa" type="checkbox" name="personality" value="africa">Africa</label><br>
+            <label for="south america"><input id="south-america" type="checkbox" name="personality" value="south-america">South America</label><br>
+            <label for="north america"><input id="north-america" type="checkbox" name="personality" value="north-america">North America</label></div>
+              <br><br><div class="radio">
+                <label name="permission">Do you prefer a pet at home?</label> <br>
+                <label for="yes">
+                   <input id="yes" type="radio" name="permission" value="yes">Yes<br>
+               </label>
+               <label for="no">
+                   <input id="no" type="radio" name="permission" value="no">No
+               </label><br>
+                  <label for="other">
+                   <input id="other" type="radio" name="permission" value="other">Other
+               </label>
+           </div><br><br>
+              <select id="dropdown" style="width:80%;height:27px;">
+    <option value="" id="">--Choose your Favourite pet--</option>
+    <option value="dog">Dog</option>
+    <option value="cat">Cat</option>
+    <option value="hamster">Hamster</option>
+</select>
+              <br><br>Suggestions:<br><textarea id="suggestions" size="100%"></textarea>
+          <hr>  <button id= "submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</main>
+</body>
+</html>
